@@ -5,7 +5,7 @@ import requests
 import os
 from flask import Flask
 from threading import Thread
-
+env_bot=os.environ
 # Flask app
 app = Flask('')
 
@@ -21,7 +21,7 @@ def keep_alive():
     t.start()
 
 # Bot token (Replace with your token)
-API_TOKEN = '8047030970:AAE37Oj7pWOFWj5r8hOc6XGwa5E-mlF3hjA'
+API_TOKEN = env_bot['TOKEN']
 bot = telebot.TeleBot(API_TOKEN)
 
 # YouTube video download function

@@ -1,0 +1,6 @@
+pyTelegramBotAPI==4.0.0
+yt-dlp
+instaloader
+flask
+requests
+gunicorn
